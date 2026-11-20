@@ -31,6 +31,25 @@ que publicar: hace falta ejecutar la campaña bajo RoE firmada.
 Si una técnica no se ejecuta, se marca `no-ejecutada`: **nunca** se rellena con
 telemetría sintética como si fuera real.
 
+## Prototipo verificable
+
+`dataset_tools.py` — sanitización (elimina secretos y seudonimiza hosts),
+validación de contrato, control de calidad de etiquetas, reparto determinista
+60/20/20, exportación a JSONL, estadísticas y generación de datasheet.
+
+```powershell
+python -m unittest discover -v
+python dataset_tools.py report fixtures/telemetry_raw.jsonl
+python dataset_tools.py export fixtures/telemetry_raw.jsonl --out out
+```
+
+`fixtures/telemetry_raw.jsonl` es sintético y contiene secretos falsos
+explícitamente para probar la sanitización. Resultado medido en `results.json`,
+con el SHA256 de la fixture. CI ejecuta los tests en cada push.
+
+**Este dataset no es telemetria real**: es el contrato de formato del futuro
+dataset v1, que aún requiere ejecutar la campaña en laboratorio.
+
 ## Ámbito
 
 Laboratorio aislado, alcance declarado y RoE firmada. Uso exclusivamente

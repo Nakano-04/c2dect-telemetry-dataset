@@ -1,0 +1,40 @@
+{
+  "datasheet": {
+    "name": "c2dect-lab-telemetry-v1 (prototipo sintetico)",
+    "motivation": "Contrato de formato y prueba del pipeline de dataset; no telemetria real.",
+    "composition": {
+      "events": 6,
+      "by_technique": {
+        "T1055": 2,
+        "T1059": 2,
+        "T1071": 2
+      },
+      "by_event_type": {
+        "memory_protect": 1,
+        "network_connect": 2,
+        "process_create": 2,
+        "thread_context": 1
+      }
+    },
+    "capture": "Totalmente sintetico. Generado para este prototipo.",
+    "labeling": "Por tecnica ATT&CK, host seudonimizado y marca de tiempo.",
+    "limits": [
+      "No usar para entrenar detectores que pretendan generalization real.",
+      "No representa ninguna campana ejecutada ni ningun laboratorio real."
+    ]
+  },
+  "quality": {
+    "events": 6,
+    "missing_labels": [],
+    "duplicate_keys": [],
+    "ok": true
+  },
+  "splits": {
+    "train": 6,
+    "val": 0,
+    "test": 0
+  },
+  "fixture_sha256": {
+    "fixtures/telemetry_raw.jsonl": "d5162a2900fd36d264e217771d94e0a00eeda4622e298039cb7da79088f7b84a"
+  }
+}

@@ -1,0 +1,6 @@
+{"event_type": "process_create", "host": "host_real", "t": 1.0, "technique": "T1059", "password": "synthetic-secret", "command_line": "cmd /c whoami"}
+{"event_type": "memory_protect", "host": "host_real", "t": 2.0, "technique": "T1055", "api_key": "synthetic-key"}
+{"event_type": "thread_context", "host": "host_real", "t": 3.0, "technique": "T1055"}
+{"event_type": "network_connect", "host": "host_b", "t": 4.0, "technique": "T1071", "token": "synthetic-token"}
+{"event_type": "process_create", "host": "host_b", "t": 5.0, "technique": "T1059"}
+{"event_type": "network_connect", "host": "host_c", "t": 6.0, "technique": "T1071"}
