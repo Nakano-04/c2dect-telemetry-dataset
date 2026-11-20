@@ -50,6 +50,12 @@ con el SHA256 de la fixture. CI ejecuta los tests en cada push.
 **Este dataset no es telemetria real**: es el contrato de formato del futuro
 dataset v1, que aún requiere ejecutar la campaña en laboratorio.
 
+## Dimensión ofensiva
+
+Cada técnica ofensiva se mapea a la telemetría que produce. Las hipótesis de
+brecha (`c2dect-investigacion/OFENSIVA/06-hipotesis-brechas.md`) guían qué
+técnicas ejecutar primero para maximizar el conocimiento sobre cobertura.
+
 ## Ámbito
 
 Laboratorio aislado, alcance declarado y RoE firmada. Uso exclusivamente
