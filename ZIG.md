@@ -1,4 +1,4 @@
-# Ejecutable Zig — `dataset_zig`
+# Ejecutable Zig - `dataset_zig`
 
 Sanitizador de telemetría en Zig 0.17.1. Elimina claves con secretos,
 seudonimiza el host con SHA256 y cuenta eventos por técnica.

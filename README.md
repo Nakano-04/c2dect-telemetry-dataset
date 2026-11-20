@@ -1,4 +1,4 @@
-# Plan 7 — Dataset de telemetría etiquetado del laboratorio
+# Plan 7 - Dataset de telemetría etiquetado del laboratorio
 
 **Solo información y resultados.** Sin código fuente.
 
@@ -33,7 +33,7 @@ telemetría sintética como si fuera real.
 
 ## Prototipo verificable
 
-`dataset_tools.py` — sanitización (elimina secretos y seudonimiza hosts),
+`dataset_tools.py` - sanitización (elimina secretos y seudonimiza hosts),
 validación de contrato, control de calidad de etiquetas, reparto determinista
 60/20/20, exportación a JSONL, estadísticas y generación de datasheet.
 
